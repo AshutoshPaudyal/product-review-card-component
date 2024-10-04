@@ -15,7 +15,7 @@ a {
 
 #container {
   background-color: hsl(30, 38%, 92%);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +23,7 @@ a {
 
 #content-box {
   background-color: hsl(0, 0%, 100%);
-  max-height: 355px;
+  max-height: 380px;
   height: 90%;
   max-width: 500px;
   width: 90%;
@@ -31,6 +31,7 @@ a {
   border-radius: 10px;
   box-sizing: border-box;
   flex-direction: row;
+  margin-block:1rem;
 }
 
 .image-section,
@@ -52,6 +53,20 @@ a {
 
 .detail-section {
   padding: 1.7rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#item-details,
+#price-section,
+#add-to-cart {
+  min-width: 0;
+  min-height: 0;
+}
+
+#item-details{
+  display: flex;
+  flex-direction: column;
 }
 
 .detail-section h6 {
@@ -77,7 +92,6 @@ a {
 #price-section {
   display: flex;
   align-items: center;
-  flex: 1 0 50%;
 }
 
 .detail-section #offer-price,
